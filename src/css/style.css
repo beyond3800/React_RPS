@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    background: #444;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+main{
+    margin-top: 10rem;
+}
+.btnArea button,.reset button{
+    padding: 3rem;
+    border-radius: 25%;
+    margin-left: 10px;
+    font-weight: 800;
+    font-size:4rem;
+    cursor: pointer;
+}
+.btnArea :first-child{
+    background: #333;
+}
+.btnArea :first-child:hover{
+    background: #888;
+}
+.btnArea :nth-child(2){
+    background-color: #c0b8b8;
+}
+.btnArea :nth-child(2):hover{
+    background-color: #fff;
+}
+.btnArea :nth-child(3){
+    background-color: rgb(146, 32, 32);
+}
+.btnArea :nth-child(3):hover{
+    background-color: rgb(231, 88, 88);
+}
+.score, .picked{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.reset{
+    text-align: center;
+    margin-top: 2rem;
+}
+.reset button:hover{
+    background-color: red;
+}
+.picked{
+    margin-bottom: 10px;
+}
+.text-center{
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.link header{
+    padding-left: 10px;
+    font-size: 30px;
+    transform: rotateY(30deg);
+}
+.link a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 25px;
+}
+.link a:hover{
+    color: rgb(48, 179, 48);
+}
+nav{
+    width: 100%;
+    background: linear-gradient(rgb(113, 113, 157),white);
+    box-shadow: 1px 1px 12px #333;
+}
+.winner{
+    color: green;
+}
+.loser{
+    color: red;
+}
+@media(max-width:600px){
+    .btnArea button,.reset button{
+        padding: 2rem;
+        font-weight: 500;
+        font-size:2rem;
+    }
+    .score, .picked{
+        font-size: 2rem;
+    }
+    .sm{
+        font-size: 25px;
+    }
+
+}
